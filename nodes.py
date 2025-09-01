@@ -202,7 +202,7 @@ class ReduxAdvanced:
                              "style_model": ("STYLE_MODEL", ),
                              "clip_vision": ("CLIP_VISION", ),
                              "image": ("IMAGE",),
-                             "downsampling_factor": ("FLOAT", {"default": 3, "min": 1, "max":9, "step": 0.1}),
+                             "downsampling_factor": ("FLOAT", {"default": 3, "min": 1, "max":9, "step": 0.05}),
                              "downsampling_function": (["nearest", "bilinear", "bicubic","area","nearest-exact"], {"default": "area"}),
                              "mode": (IMAGE_MODES, {"default": "center crop (square)"}),
                              "weight": ("FLOAT", {"default": 1.0, "min":0.0, "max":1.0, "step":0.01})
